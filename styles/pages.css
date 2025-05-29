@@ -119,4 +119,133 @@ main {
     nav li::before {
         display: none;
     }
+}
+
+/* Footer */
+.footer {
+    background: rgba(255, 255, 255, 0.95);
+    background-size: cover;
+    padding: 3rem 2rem;
+    border-top: 4px solid #DAA520;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(139, 0, 0, 0.1), rgba(218, 165, 32, 0.1));
+    pointer-events: none;
+}
+
+.footer-group {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-group h1 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-group li {
+    color: #333;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.footer-group li::before {
+    content: '•';
+    color: #DAA520;
+    position: absolute;
+    left: 0;
+}
+
+.footer-links {
+    flex: 2;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-links h2 {
+    color: #8B0000;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #DAA520;
+}
+
+.footer-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#voltarBtn {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #8B0000, #DAA520);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+#voltarBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer-group {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-group li::before {
+        display: none;
+    }
+
+    .footer-button {
+        justify-content: center;
+    }
 } 
