@@ -1,0 +1,81 @@
+/* Gallery Layout */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+}
+
+main section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B0000, #DAA520);
+    border-radius: 8px 8px 0 0;
+}
+
+main section h1 {
+    color: #8B0000;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+main section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main section img:hover {
+    transform: scale(1.02);
+}
+
+main section p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    main section {
+        padding: 1.5rem;
+    }
+
+    main section h1 {
+        font-size: 1.5rem;
+    }
+
+    main section p {
+        font-size: 1rem;
+    }
+}
