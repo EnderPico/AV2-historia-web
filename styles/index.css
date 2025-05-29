@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Seção Titulo */
+#Titulo {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+#Titulo h2 {
+    font-size: 2.5rem;
+    color: #8B0000;
+    margin-bottom: 1rem;
+}
+
+#Titulo p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Grid de Temas */
+#themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+article {
+    background: #fff;
+    transition: transform 0.3s ease;
+    position: relative;
+    min-height: 300px;
+    padding: 2rem;
+    text-align: center;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B0000, #DAA520);
+}
+
+.theme-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+article h3 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+a.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #8B0000, #DAA520);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+a.btn-primary:hover {
+    transform: scale(1.05);
+}
