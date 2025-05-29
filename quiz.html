@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EducaHistória - Quiz</title>
     <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
     <header>
@@ -20,6 +21,124 @@
         </nav>
     </header>
     <main>
+        <section class="quiz-container">
+            <h2>🏛️ Quem você seria na Antiguidade?</h2>
+            <p>Descubra se você seria mais grego ou romano!</p>
+            
+            <form id="quiz-form">
+                <div class="question-container">
+                    <h3>1. Qual dessas atividades você mais curte?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q1" value="a" required>
+                            A) Conversar por horas sobre ideias e filosofar com amigos
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            B) Traçar planos para dominar o mundo — ou pelo menos seu bairro
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            C) Liderar projetos, times e decisões importantes
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            D) Refletir sobre a vida, o tempo e o universo antes de dormir
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3>2. Se você tivesse poder ilimitado por um dia, o que faria?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q2" value="a" required>
+                            A) Criaria debates públicos obrigatórios para todo mundo aprender algo
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            B) Uniria nações e culturas sob um único comando (o seu, claro)
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            C) Reformaria todo o sistema político para funcionar melhor
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            D) Daria um tempo nas obrigações do mundo — tudo tem seu momento
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3>3. Como você lida com conflitos?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q3" value="a" required>
+                            A) Com argumentos e perguntas até o outro desistir
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            B) Tomando controle da situação com firmeza
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            C) Estratégia. Você já pensou em tudo antes de agir
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            D) Tentando entender o lado de todos e achar equilíbrio
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3>4. Qual dessas frases mais parece algo que você diria?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q4" value="a" required>
+                            A) "Só sei que nada sei."
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            B) "A sorte favorece os ousados."
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            C) "Veni, vidi, vici."
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            D) "A pressa é inimiga da perfeição."
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h3>5. Se te dessem um livro agora, qual tema te atrairia mais?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q5" value="a" required>
+                            A) Filosofia e ética
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="b">
+                            B) Biografias de grandes líderes
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="c">
+                            C) Estratégia, política e história
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="d">
+                            D) Sabedoria prática e autocontrole
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Descobrir meu personagem</button>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-group">
@@ -57,5 +176,6 @@
         </div>
     </footer>
     <script src="scripts/pages.js"></script>
+    <script src="scripts/quiz.js"></script>
 </body>
 </html>
